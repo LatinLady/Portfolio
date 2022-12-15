@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-style:oblique;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -16,25 +17,44 @@ body {
     cursor: pointer;
     
 }
+a:hover {
+  color:rgb(137, 137, 239);
+}
 
 
 header {
     background-color: rgb(210, 214, 212);
     font-size: 20px;
     padding:10px;
+    margin: 15px; 
+  
   
     
 }
 
 
-h1 {
+ .circle h1 {
     font-size: 40px;
-    float: left;
-    color: rgb(110, 110, 244);
-    padding-left: 10px;
+    float: right;
+    color: rgb(111, 136, 238);
+    margin-top: 50px;
+    padding-right: 55%;
+    padding-left: 5px;
+    
+    
     
 }
 
+.circle{
+  margin-top: 10px;
+  padding: 10px;
+  display: inline;
+  width: 40px;
+  height: 100px;
+  text-align: left;
+  vertical-align: left;
+  
+}
 .container {
   cursor: pointer;
   transition: 0.8s;
@@ -46,8 +66,6 @@ h1 {
 
  ul {
     list-style-type: none;
-    /*margin: 5px;*/
-    /*padding: 5px;*/
     overflow: hidden;
     background-color:rgb(210, 214, 212);
   }
@@ -70,8 +88,8 @@ h1 {
 
   h2 {
   float:right;
-  font-size: 30px;
-  color:rgb(78, 90, 250) ;
+  font-size: 2.5em;
+  color:whitesmoke ;
   margin-top: 10px;
   padding-left: 60px;
   padding-right: 20px;
@@ -82,35 +100,39 @@ h1 {
   display: flex;
   height: 100%;
   vertical-align: middle;
-  margin: 60px
-
+  margin: 60px;
+  background-color: rgb(48, 43, 153);
+ box-shadow: rgb(166, 175, 235); 
 }
 
 .info h3{
   float: left;
   font-size: 2em;
-  color:rgb(78, 90, 250)  ;
+  color:rgb(78, 90, 250) ;
 }
 
 .info li{
  margin-top: 5px;
- padding: 10px;
+ padding: 0;
+ width: 100%;
+ text-align: center;
  text-decoration: none; 
  float: left;
  list-style-type: none;
- color:rgb(78, 90, 250);
+ color:rgb(34, 33, 33);
+ background-color:rgb(78, 90, 250)  ;
  text-decoration: underline;
 }
 
 @media screen and(min-width: 768px) {
-  .container {
+  .container, h2 {
     flex-basis: 100%;
   }
   
 }
 
 @media  screen and(min-width: 992px) {
-  .container {
+  .container, h2 {
     flex-basis: 100%;
   }
   
