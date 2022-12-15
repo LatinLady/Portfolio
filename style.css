@@ -9,84 +9,45 @@ html {
    height: 100%;
 }
 
-body{
-    min-height: 100%;
-    line-height: 1;
-    display: inline-block;
+body {
+    display: inline;
+    padding: 0px;
     background-color: rgb(244, 243, 252);
+    cursor: pointer;
+    
 }
+
 
 header {
     background-color: rgb(210, 214, 212);
     font-size: 20px;
+    padding:10px;
+  
     
 }
 
 
-main { 
-    display: flex;
-    flex-wrap: wrap;
-}
-
 h1 {
     font-size: 40px;
-    float: right;
-    color: rgb(110, 110, 244) ;
+    float: left;
+    color: rgb(110, 110, 244);
+    padding-left: 10px;
     
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    /*flex-basis: 60%;*/
-  }
-  
-  img {
-    max-width: 50%;
-    height:250px;
-    margin: 5px;
-    margin-top: 20px;
-    padding:0px;
-    box-shadow: 5px 3px rgb(105, 108, 194);
+  cursor: pointer;
+  transition: 0.8s;
+ }
+
+  .container:hover {
+   color:rgb(137, 137, 239);
   }
 
-  .img1 {
-    width: 100%;
-    height: 250px;
-    float: right;
-
-}
-  
-  .text {
-    margin: 5px;
-    padding: 5px;
-    text-align: right;
-    font-size: 100%;
-
-
-  }
-
-  .text1 {
-    float: left;
-  }
-
-  p {
-    font-size: 20px;
-text-align: right;
-padding: 5px;
-margin: 5px;
-float: right;
-height: 200px;
-align-content:space-between
-
-
-  }
-
-
-ul {
+ ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /*margin: 5px;*/
+    /*padding: 5px;*/
     overflow: hidden;
     background-color:rgb(210, 214, 212);
   }
@@ -99,31 +60,58 @@ ul {
     display: block;
     color: rgb(78, 90, 250);
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 15px;
     text-decoration: none;
   }
   
-  li a:hover {
+ li a:hover {
     background-color: rgb(218, 221, 221);
   }
 
   h2 {
   float:right;
   font-size: 30px;
-  text-shadow: 10px rgb(8, 8, 193);
   color:rgb(78, 90, 250) ;
   margin-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 20px;
   text-decoration: underline;
   }
 
+.image{
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+  margin: 60px
 
+}
 
-  footer {
-    padding-top: 10px;
-    margin: 40px;
-    text-align: center;
+.info h3{
+  float: left;
+  font-size: 2em;
+  color:rgb(78, 90, 250)  ;
+}
 
+.info li{
+ margin-top: 5px;
+ padding: 10px;
+ text-decoration: none; 
+ float: left;
+ list-style-type: none;
+ color:rgb(78, 90, 250);
+ text-decoration: underline;
+}
 
+@media screen and(min-width: 768px) {
+  .container {
+    flex-basis: 100%;
   }
+  
+}
+
+@media  screen and(min-width: 992px) {
+  .container {
+    flex-basis: 100%;
+  }
+  
+}
