@@ -11,7 +11,7 @@ html {
 }
 
 body {
-   /* display: inline;*/
+   
     background-color: rgb(244, 243, 252);
     cursor: pointer;
 }
@@ -21,9 +21,6 @@ main{
 
 }
 
-.circle {
-  padding-left: 20px;
-}
 
 .text-right {
   display:flex;
@@ -32,16 +29,19 @@ main{
   height: 400px;
   color: rgb(111, 136, 238);
   vertical-align:middle;
- /* padding-right: 50px;*/
+ 
 }
 
 
 .circle{
   margin-top: 5px;
+  padding-left: 20px;
   flex-basis: 100%;
   width: 40px;
   height: 100px;
-  vertical-align: left;
+  vertical-align: right;
+  
+  
 }
 
 .container {
@@ -71,24 +71,25 @@ main{
   }
 
   h2 {
-  font-size: 2em;
+  font-size: 4em;
   color:rgb(78, 90, 250) ;
-  /*margin: 5px;*/
-  /*padding:10px;*/
+  margin: 40px;
+  padding:10px;
   border: 1px solid black;
-  text-align: right;
   background-color:whitesmoke ;
   box-shadow: 2px 1px rgb(110, 109, 194);
   }
 
 .image{
-  display: inline;
+  display: flex;
   flex-direction: row;
+  margin: 10px;
+  padding: 20px;
   height: 100%;
   flex-basis: 100%;
-  /*margin: 90px;*/
+  justify-content: space-evenly;
   vertical-align:middle;
-  background-color:rgb(210, 214, 212);
+  
   }
 
 .info {
