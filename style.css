@@ -11,18 +11,9 @@ html {
 }
 
 body {
-    display: inline;
+   /* display: inline;*/
     background-color: rgb(244, 243, 252);
     cursor: pointer;
-}
-
-
-header {
-    display:inline;
-    background-color: rgb(210, 214, 212);
-    font-size: 20px;
-    /*padding-left: 10px;*/
-
 }
 
 main{
@@ -40,17 +31,16 @@ main{
   flex-basis: 100%;
   height: 400px;
   color: rgb(111, 136, 238);
+  vertical-align:middle;
+ /* padding-right: 50px;*/
 }
 
 
 .circle{
   margin-top: 5px;
-/*  padding: 10px;*/
- /* display: inline;*/
   flex-basis: 100%;
   width: 40px;
   height: 100px;
- /* text-align: left;*/
   vertical-align: left;
 }
 
@@ -81,29 +71,25 @@ main{
   }
 
   h2 {
-  /*float:right;*/
-  font-size: 2.5em;
+  font-size: 2em;
   color:rgb(78, 90, 250) ;
-  margin: 50px  50px 0px 50px;
-  padding: 0px 40px 0px 30px;
+  /*margin: 5px;*/
+  /*padding:10px;*/
   border: 1px solid black;
-  text-align: center;
+  text-align: right;
   background-color:whitesmoke ;
   box-shadow: 2px 1px rgb(110, 109, 194);
   }
 
 .image{
-  display: flex;
-  flex-direction:row;
+  display: inline;
+  flex-direction: row;
   height: 100%;
   flex-basis: 100%;
-  margin: 10px;
-  vertical-align: middle;
- /* margin: 10px;*/
+  /*margin: 90px;*/
+  vertical-align:middle;
   background-color:rgb(210, 214, 212);
-  
- 
-}
+  }
 
 .info {
   display: flex;
@@ -124,8 +110,9 @@ main{
 }
 
 @media screen and(min-width: 768px) {
-  .container, header, li a,
-  .info li {
+  .text-right,
+  .container,
+  .info {
     flex-basis: 100%;
     
   }
@@ -133,9 +120,10 @@ main{
 }
 
 @media  screen and(min-width: 992px) {
-  .container, header,
-  .info li{
-    flex-basis: 50%;
+  .text-right,
+  .container,
+  .info {
+    flex-basis: 100%;
    
   }
   
